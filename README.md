@@ -32,13 +32,13 @@ graph TD
     E --> F[localhost:80<br/>Web Browser]
     D --> G[shared-html<br/>& backup files]
     
-    style A fill:#f9d71c
-    style B fill:#f9d71c  
-    style C fill:#ff6b6b
-    style D fill:#4ecdc4
-    style E fill:#45b7d1
-    style F fill:#96ceb4
-    style G fill:#feca57
+    style A fill:#f9d71c,stroke:#333,stroke-width:2px,color:#000
+    style B fill:#f9d71c,stroke:#333,stroke-width:2px,color:#000
+    style C fill:#ff6b6b,stroke:#333,stroke-width:2px,color:#fff
+    style D fill:#4ecdc4,stroke:#333,stroke-width:2px,color:#000
+    style E fill:#45b7d1,stroke:#333,stroke-width:2px,color:#fff
+    style F fill:#96ceb4,stroke:#333,stroke-width:2px,color:#000
+    style G fill:#feca57,stroke:#333,stroke-width:2px,color:#000
 ```
 
 ### 백업 시스템 작동 방식
@@ -64,14 +64,17 @@ flowchart TD
     Save --> Files[(백업 파일)]
     Files --> |복구 시 사용| Load
     
-    style Check fill:#f9d71c
-    style Receive fill:#4ecdc4
-    style Save fill:#96ceb4
-    style HTML1 fill:#4ecdc4
-    style Backup fill:#ff6b6b
-    style Load fill:#ff6b6b
-    style HTML2 fill:#feca57
-    style Files fill:#dda0dd
+    style Start fill:#333,stroke:#fff,stroke-width:2px,color:#fff
+    style API fill:#333,stroke:#fff,stroke-width:2px,color:#fff
+    style Check fill:#f9d71c,stroke:#333,stroke-width:2px,color:#000
+    style Receive fill:#4ecdc4,stroke:#333,stroke-width:2px,color:#000
+    style Save fill:#96ceb4,stroke:#333,stroke-width:2px,color:#000
+    style HTML1 fill:#4ecdc4,stroke:#333,stroke-width:2px,color:#000
+    style Backup fill:#ff6b6b,stroke:#333,stroke-width:2px,color:#fff
+    style Load fill:#ff6b6b,stroke:#333,stroke-width:2px,color:#fff
+    style HTML2 fill:#feca57,stroke:#333,stroke-width:2px,color:#000
+    style Wait fill:#333,stroke:#fff,stroke-width:2px,color:#fff
+    style Files fill:#dda0dd,stroke:#333,stroke-width:2px,color:#000
 ```
 
 **백업 파일 구조:**
