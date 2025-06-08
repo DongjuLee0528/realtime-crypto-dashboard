@@ -9,7 +9,6 @@ services:
     container_name: crypto-monitor-service
     environment:
       - TZ=Asia/Seoul
-      - UPDATE_INTERVAL=30
     volumes:
       - shared-html:/shared
       - /etc/timezone:/etc/timezone:ro
