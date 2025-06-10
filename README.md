@@ -32,7 +32,7 @@ graph TD
     D --> E["🔵 nginx Container<br/>웹 서버"]
     D --> G["🟡 shared-html 볼륨<br/>파일 공유 저장소"]
     
-    E --> F["🟢 localhost:3090<br/>웹 브라우저 접속"]
+    E --> F["🟢 localhost:80<br/>웹 브라우저 접속"]
     
     classDef apiBox fill:#f9d71c,stroke:#333,stroke-width:3px,color:#000,font-size:14px,font-weight:bold
     classDef backupBox fill:#ff6b6b,stroke:#333,stroke-width:3px,color:#fff,font-size:14px,font-weight:bold
@@ -297,7 +297,7 @@ log "✅ HTML 페이지 업데이트 완료 (상태: success)"
    ```bash
    docker-compose up --build
    ```
-2. 웹 브라우저에서 `http://localhost:3090` 접속
+2. 웹 브라우저에서 `http://localhost` 접속
 3. 30초마다 자동으로 데이터가 업데이트됨
 4. 종료: `Ctrl+C` 또는 `docker-compose down`
 
